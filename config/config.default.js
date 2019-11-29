@@ -38,7 +38,7 @@ module.exports = appInfo => {
       //   partitions: 10,
       //   replicationFactor: 1,
       // },
-      thingPaasMqttsUpstream: {
+      thingPaaSMqttUpstream: {
         topic: 'thing_paas_mqtts_upstream',
         partitions: 10,
         replicationFactor: 1,
