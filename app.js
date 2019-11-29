@@ -6,7 +6,7 @@ module.exports = async app => {
   const kafkaWorkerIns = new kafkaWorker(app, {
     initProducer: true,
     async handler() {
-      await wait(1000); // mock 异步调用
+      await wait(2000); // mock 异步调用
     },
   });
 

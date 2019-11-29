@@ -89,5 +89,33 @@ publiser.start(1, (error, res) => {
   const partion = Object.keys(res.thing_paas_mqtts_upstream)[0];
   const offset = res.thing_paas_mqtts_upstream[partion];
   if (error) console.log(error);
-  else console.log(`发送第${res.count}条数据, partion：${partion},, offset: ${offset}`);
+  else console.log(`[publisher01] 发送第${res.count}条数据, partion：${partion}, offset: ${offset}`);
+});
+
+publiser.start(1, (error, res) => {
+  const partion = Object.keys(res.thing_paas_mqtts_upstream)[0];
+  const offset = res.thing_paas_mqtts_upstream[partion];
+  if (error) console.log(error);
+  else console.log(`[publisher02] 发送第${res.count}条数据, partion：${partion}, offset: ${offset}`);
+});
+
+publiser.start(1, (error, res) => {
+  const partion = Object.keys(res.thing_paas_mqtts_upstream)[0];
+  const offset = res.thing_paas_mqtts_upstream[partion];
+  if (error) console.log(error);
+  else console.log(`[publisher03] 发送第${res.count}条数据, partion：${partion}, offset: ${offset}`);
+});
+
+publiser.start(1, (error, res) => {
+  const partion = Object.keys(res.thing_paas_mqtts_upstream)[0];
+  const offset = res.thing_paas_mqtts_upstream[partion];
+  if (error) console.log(error);
+  else console.log(`[publisher04] 发送第${res.count}条数据, partion：${partion}, offset: ${offset}`);
+});
+
+publiser.start(1, (error, res) => {
+  const partion = Object.keys(res.thing_paas_mqtts_upstream)[0];
+  const offset = res.thing_paas_mqtts_upstream[partion];
+  if (error) console.log(error);
+  else console.log(`[publisher05] 发送第${res.count}条数据, partion：${partion}, offset: ${offset}`);
 });
