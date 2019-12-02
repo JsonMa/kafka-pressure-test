@@ -41,7 +41,7 @@ class Publisher {
     client.on('connect', () => {
       this.producer.once('ready', () => {
         setInterval(() => {
-          const message = new Array(100).join(Math.random().toString(36));
+          const message = new Array(10).join(Math.random().toString(36));
           this.sendMessage(message, callback);
         }, time);
       });
