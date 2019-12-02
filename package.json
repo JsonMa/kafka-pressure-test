@@ -28,7 +28,7 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-kafka-pressure-test",
+    "start": "egg-scripts start --daemon --workers=2 --title=egg-server-kafka-pressure-test",
     "stop": "egg-scripts stop --title=egg-server-kafka-pressure-test",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
