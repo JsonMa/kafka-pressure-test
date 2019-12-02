@@ -1,33 +1,29 @@
 # kafka-pressure-test
 
-kafka pressure test project
+kafka 压力测试项目
 
-## QuickStart
+## 使用示例
 
-<!-- add docs here for user -->
+#### 发送数据
 
-see [egg docs][egg] for more detail.
-
-### Development
+1. node 直接启动
 
 ```bash
-$ npm i
-$ npm run dev
-$ open http://localhost:7001/
+$ node ../test/lib/sendMessage.js
 ```
 
-### Deploy
+2. vscode 调试方式启动
+
+### 消费数据
+
+1. 单进程
+
+```bash
+$ npm run dev
+```
+
+2. 多进程(进程数量可通过 workers 数量修改)
 
 ```bash
 $ npm start
-$ npm stop
 ```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
